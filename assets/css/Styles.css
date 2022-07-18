@@ -1,0 +1,29 @@
+/*header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #ED213A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(6, 66%, 35%, 0.596), hsla(353, 85%, 53%, 0.596)), url(../img/Portadas/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(6, 66%, 35%, 0.596), hsla(353, 85%, 53%, 0.596)), url(../img/Portadas/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header-prod {
+    width: 100%;
+    height: 600px;
+    background: #ED213A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(6, 66%, 35%, 0.596), hsla(353, 85%, 53%, 0.596)), url(../img/portafolio/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(6, 66%, 35%, 0.596), hsla(353, 85%, 53%, 0.596)), url(../img/portafolio/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
