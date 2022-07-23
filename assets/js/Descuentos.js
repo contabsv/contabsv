@@ -31,6 +31,7 @@ function Calcular() {
 
     let SueldoNeto = salario - AFP_E - ISSS_E - Renta_E;
 
+
     switch (tipoC) {
         case "Mensual":
             //document.getElementById('tipoCalculo').value 

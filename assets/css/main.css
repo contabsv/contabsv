@@ -1814,6 +1814,7 @@ hr {
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
+input[type="checkbox"],
 button,
 .button {
     -moz-appearance: none;
@@ -1841,6 +1842,7 @@ button,
 input[type="submit"].icon,
 input[type="reset"].icon,
 input[type="button"].icon,
+input[type="checkbox"],
 button.icon,
 .button.icon {
     padding-left: 1.35rem;
