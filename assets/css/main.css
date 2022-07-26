@@ -2485,8 +2485,10 @@
     /* Table */
     
     table {
-        width: auto;
+        width: 90%;
         padding: 20px;
+        margin: auto;
+        border-collapse: collapse;
     }
     
     table tbody tr {
@@ -3262,6 +3264,12 @@
     @media screen and (max-width: 736px) {
         .wrapper {
             padding: 3rem 0 1rem 0;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .wrapper {
+            padding: 1rem 0 1rem 0;
         }
     }
     /* Flexgrid */
