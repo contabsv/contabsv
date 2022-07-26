@@ -1,9 +1,3 @@
-/*
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 var settings = {
 
     banner: {
@@ -36,7 +30,7 @@ var settings = {
     });
 
     /**
-     * Applies parallax scrolling to an element's background image.
+     * Aplica desplazamiento de paralaje a la imagen de fondo de un elemento.
      * @return {jQuery} jQuery object.
      */
     $.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
@@ -133,113 +127,11 @@ var settings = {
 
         // Vars.
         var current = 0,
-            pos = 0,
-            lastPos = 0,
             slides = [],
-            indicators = [],
-            $indicators,
-            $slides = $this.children('article'),
             intervalId,
-            isLocked = false,
             i = 0;
 
-        // Desactivar indicadores si solo tenemos una diapositiva
-        if ($slides.length == 1)
-            options.indicators = false;
 
-        // Functions.
-        $this._switchTo = function(x, stop) {
-
-            if (isLocked || pos == x)
-                return;
-
-            isLocked = true;
-
-            if (stop)
-                window.clearInterval(intervalId);
-
-            // Update positions.
-            lastPos = pos;
-            pos = x;
-
-            //Ocultar última diapositiva.
-            slides[lastPos].removeClass('top');
-
-            if (options.indicators)
-                indicators[lastPos].removeClass('visible');
-
-            // Mostrar nueva diapositiva.
-            slides[pos].addClass('visible').addClass('top');
-
-            if (options.indicators)
-                indicators[pos].addClass('visible');
-
-            // Termina de ocultar la última diapositiva después de un breve retraso.
-            window.setTimeout(function() {
-
-                slides[lastPos].addClass('instant').removeClass('visible');
-
-                window.setTimeout(function() {
-
-                    slides[lastPos].removeClass('instant');
-                    isLocked = false;
-
-                }, 100);
-
-            }, options.speed);
-
-        };
-
-        // Indicadores.
-        if (options.indicators)
-            $indicators = $('<ul class="indicators"></ul>').appendTo($this);
-
-        // Diapositivas.
-        $slides
-            .each(function() {
-
-                var $slide = $(this),
-                    $img = $slide.find('img');
-
-                // Slide.
-                $slide
-                    .css('background-image', 'url("' + $img.attr('src') + '")')
-                    .css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
-
-                // Add to slides.
-                slides.push($slide);
-
-                // Indicators.
-                if (options.indicators) {
-
-                    var $indicator_li = $('<li>' + i + '</li>').appendTo($indicators);
-
-                    // Indicator.
-                    $indicator_li
-                        .data('index', i)
-                        .on('click', function() {
-                            $this._switchTo($(this).data('index'), true);
-                        });
-
-                    // Add to indicators.
-                    indicators.push($indicator_li);
-
-                }
-
-                i++;
-
-            })
-            ._parallax(options.parallax);
-
-        // Diapositiva inicial.
-        slides[pos].addClass('visible').addClass('top');
-
-        if (options.indicators)
-            indicators[pos].addClass('visible');
-
-        // Fianza si solo tenemos una sola diapositiva
-        if (slides.length == 1)
-            return;
 
         // Bucle principal.
         intervalId = window.setInterval(function() {
@@ -319,24 +211,3 @@ var settings = {
     });
 
 })(jQuery);
-
-
-document.addEventListener("DOMContentLoaded", function(e) {
-    const parrafos = document.querySelectorAll('.parrafo');
-
-    let alturas = [];
-    let alturaMaxima = 0;
-
-    const aplicarAlturas = (function aplicarAlturas() {
-        parrafos.forEach(parrafo => {
-            if (alturaMaxima == 0) {
-                alturas.push(parrafo.clientHeight);
-            } else {
-                parrafo.style.height = alturaMaxima + "px";
-            }
-        })
-        return aplicarAlturas;
-    })();
-    alturaMaxima = Math.max.apply(Math, alturas);
-    aplicarAlturas();
-});

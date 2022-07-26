@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/Registro.css">
+    <title>Formulario de registro</title>
+</head>
+
+<body class="bodyr">
+    <form action="../php/regProducto.php" method="post" class="form-regit" enctype="multipart/form-data">
+        <input class="contl" type="text" name="proNombre" id="proNombre" placeholder="Nombre del producto">
+        <textarea class="contl" name="proDescripcion" id="proDescripcion" rows="4" cols="500" placeholder="Detalle del producto"></textarea>
+        <input class="contl" type="text" name="precPro" id="PrecPro" placeholder="Precio del producto">
+        <input type="file" name="foto" id="foto" placeholder="Selecione una imagen">
+        <input type="submit" class="bot" value="Guardar">
+        <p><a href="../php/mostrar.php">Regresar</a></p>
+    </form>
+</body>
+
+</html>
