@@ -4218,13 +4218,12 @@
     .content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        column-gap: 20px;
         max-width: 1000px;
         margin: auto;
     }
     
     .post-img {
-        background: url(post.jpeg);
         width: 100%;
         height: 200px;
         background-size: cover;
