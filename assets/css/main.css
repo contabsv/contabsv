@@ -4215,7 +4215,7 @@
         padding: 30px 15px;
     }
     
-    .content {
+    .content1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
