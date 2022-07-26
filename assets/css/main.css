@@ -4204,6 +4204,12 @@
     .btn1 {
         margin-top: 10px;
     }
+    /*tablas*/
+    
+    .tabl {
+        border: #000000;
+        width: 100%;
+    }
     /*Blog*/
     
     .post-list {
@@ -4307,5 +4313,11 @@
     @media screen and (max-width: 600px) {
         .content {
             padding: 3rem 0 1rem 0;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .content {
+            padding: 1rem;
         }
     }

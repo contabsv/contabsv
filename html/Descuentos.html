@@ -13,7 +13,7 @@
 
     <!-- Header -->
     <header id="header" class="">
-        <a href="#menu">Asesoria</a>
+        <a href="#menu">Realizar calculo</a>
         <div class="logo"><a href="https://play.google.com/store/apps/details?id=cpl.calculadora.hp.calculadoradeprestacioneslaborales&hl=es_419&gl=US">CPL<span>-Descuento-AFP-ISSS-Renta</span></a></div>
     </header>
 
@@ -32,51 +32,45 @@
             <div class="box">
                 <div class="content">
                     <form method="post" action="" enctype="multipart/form-data">
-                        <div class="row uniform">
-                            <table>
-                                <td class="6u 12u$(xsmall)">
-                                    <p>Selecione el area
-                                        <select id="AreaL" name="Categoria">
+                        <table class="tabl">
+                            <td width='50%'>
+                                <p>Selecione el area
+                                    <select id="AreaL" name="Categoria">
                                     <option value="#"></option>
                                     <option value="Comercio">Comercio</option>
                                     <option value="Industria">Industria</option>
                                     <option value="Maquila">Maquila</option>
                                     <option value="Agropecuario">Agropecuario</option>
                                 </select>
-                                    </p>
-                                    <p>Ingrese Salario $
-                                        <input type="number" id="Sueldo" name="Sueldo">
-                                    </p>
-                                    <p>
-                                        <select name="tipo" id="tipo">
+                                </p>
+                                <p>Ingrese Salario $
+                                    <input type="number" id="Sueldo" name="Sueldo">
+                                </p>
+                                <p>
+                                    <select name="tipo" id="tipo">
                                             <option value="Quincenal">Quincenal</option>
                                             <option value="Mensual">Mensual</option>
                                         </select>
-                                    </p>
-                                    <input type="button" onclick="Calcular()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
-                                    <p>
-                                        <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
-                                            <p align="justify">Si el salario ingresado es inferior al minimo del area selecionada, siempre lo calculara pero advetencia debe tomar en cuenta que es el salario estipulado en la ley</p>
-                                        </p>
-                                    </p>
-                                </td>
-                                <td class="6u 12u$(xsmall)">
-                                    <p>Salario Bruto:
-                                        <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                                    <p>AFP Laboral:
-                                        <input id="afp" name="afp" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                                    <p>ISSS Laboral:
-                                        <input id="Isss" name="Isss" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                                    <p>Renta:
-                                        <input id="Renta" name="Renta" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                                    <p>_______</p>
-                                    <p>Salario Neto:
-                                        <input id="SalarioN" name="SalarioN" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                                </td>
-                            </table>
-                        </div>
-                    </form>
+                                </p>
+                                <p><input type="button" onclick="Calcular()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
+                                </p>
+                                <p>Nota: El salario a ingresar es el mensuan sin ningun descuento, tener encuenta que la aplicacion solo contempla el salario estipulado por unidad de tiempo</p>
+                            </td>
+                            <td width='50%'>
+                                <p>Salario Bruto:
+                                    <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                                <p>AFP Laboral:
+                                    <input id="afp" name="afp" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                                <p>ISSS Laboral:
+                                    <input id="Isss" name="Isss" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                                <p>Renta:
+                                    <input id="Renta" name="Renta" readonly="readonly" type="text" placeholder="$0.00" /></p>
 
+                                <p>Salario Neto:
+                                    <input id="SalarioN" name="SalarioN" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                            </td>
+                        </table>
+                    </form>
                 </div>
             </div>
         </div>
