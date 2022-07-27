@@ -2485,7 +2485,7 @@
     /* Table */
     
     table {
-        width: 90%;
+        width: 100%;
         padding: 20px;
         margin: auto;
         border-collapse: collapse;
@@ -2748,7 +2748,7 @@
     
     .wrapper.style2 {
         background-color: #ebebeb;
-        color: #a6a6a6;
+        color: #000000;
     }
     
     .wrapper.style2 input,
@@ -4193,7 +4193,6 @@
     }
     
     .post:hover {
-        transition: translateY(-4px);
         box-shadow: 0 1px 14px 2px rgb(0, 0, .15);
     }
     
@@ -4237,14 +4236,22 @@
         width: 50%;
         margin: auto;
         border-radius: 20px;
-        box-shadow: 1px 2px 6px 1px rgb(0, 0, .1);
         transition: .2s;
     }
     
     .post-body .post-link:hover {
         background: #752a75;
-        box-shadow: 1px 2px 6px 1px rgb(0, 0, .2);
-        box-shadow: translateY(-2px);
+    }
+    /*Calculos*/
+    
+    .content2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+        box-shadow: 0 1px 6px 1px rgb(0, 0, .1);
+        padding: 15px;
     }
     
     @media (max-width: 840px) {
@@ -4255,6 +4262,12 @@
     
     @media (max-width: 600px) {
         .content1 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .content2 {
             grid-template-columns: repeat(1, 1fr);
         }
     }
