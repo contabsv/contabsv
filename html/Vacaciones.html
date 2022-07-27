@@ -28,52 +28,52 @@
     </nav>
 
     <!-- Banner -->
-    <section id="two" class="wrapper style2">
-        <div class="content">
-            <form method="post" action="" enctype="multipart/form-data">
-                <table>
-                    <td class="6u 12u$(xsmall)">
-                        <p>Selecione el area
-                            <select id="AreaT" name="Categoria">
+    <section class="wrapper style2">
+        <div class="content2">
+            <article>
+                <div>
+                    <span>Selecione el areas</span>
+                    <select id="AreaT" name="Categoria">
                                     <option value="#"></option>
                                     <option value="Comercio">Comercio</option>
                                     <option value="Industria">Industria</option>
                                     <option value="Maquila">Maquila</option>
                                     <option value="Agropecuario">Agropecuario</option>
                                 </select>
-                        </p>
-                        <p>Ingrese Salario $
-                            <input type="number" id="Sueldo" name="Sueldo"> Mensual sin descuentos.
-                        </p>
-                        <p>Fecha de ingreso
-                            <input type="date" id="FechaI" name="Fecha de ingreso"> A la empresa.
-                        </p>
-                        <p>Fecha de calculo
-                            <input type="date" id="FechaCal" name="Fecha de Calculo">.
-                        </p>
-                        <input type="button" onclick="CalcularVac()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
-                        <p>
-                            <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
-                            </p>
-                        </p>
-                    </td>
-                    <td class="6u 12u$(xsmall)">
-                        <p>Salario Bruto:
-                            <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" />
-                        </p>
-                        <p>Años :
-                            <input id="Ans" name="Años laborados" readonly="readonly" type="number" /> Dias: <input id="Dias" name="Dias laborados" readonly="readonly" type="number" /></p>
-                        <p>Salario de quince dias:
-                            <input id="Quicenal" name="SalarioQuincenal" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Vacaciones completas:
-                            <input id="ComVa" name="VacacionesCompletas" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Vacaciones proporcionales:
-                            <input id="ProVa" name="VacaionesProporcionales" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Total en concepto de vacaciones anuales + salario de 15 dias:
-                            <input id="TotalVac" name="TotalVacaciones" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                    </td>
-                </table>
-            </form>
+                    </p>
+                </div>
+                <p>Ingrese Salario $
+                    <input type="number" id="Sueldo" name="Sueldo"> Mensual sin descuentos.
+                </p>
+                <p>Fecha de ingreso
+                    <input type="date" id="FechaI" name="Fecha de ingreso"> A la empresa.
+                </p>
+                <p>Fecha de calculo
+                    <input type="date" id="FechaCal" name="Fecha de Calculo">.
+                </p>
+                <input type="button" onclick="CalcularVac()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
+                <p>
+                    <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
+                    </p>
+                </p>
+            </article>
+            <article>
+                <p>Salario Bruto:
+                    <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" />
+                </p>
+                <p>Años :
+                    <input id="Ans" name="Años laborados" readonly="readonly" type="number" /> </p>
+                <p> Dias:
+                    <input id="Dias" name="Dias laborados" readonly="readonly" type="number" /></p>
+                <p>Salario de quince dias:
+                    <input id="Quicenal" name="SalarioQuincenal" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Vacaciones completas:
+                    <input id="ComVa" name="VacacionesCompletas" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Vacaciones proporcionales:
+                    <input id="ProVa" name="VacaionesProporcionales" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Total en concepto de vacaciones anuales + salario de 15 dias:
+                    <input id="TotalVac" name="TotalVacaciones" readonly="readonly" type="text" placeholder="$0.00" /></p>
+            </article>
         </div>
     </section>
 

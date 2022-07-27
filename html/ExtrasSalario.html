@@ -14,7 +14,7 @@
     <!-- Header -->
     <header id="header" class="">
         <a href="#menu">Realizar calculo</a>
-        <div class="logo"><a href="https://play.google.com/store/apps/details?id=cpl.calculadora.hp.calculadoradeprestacioneslaborales&hl=es_419&gl=US">CPL<span>-Horas Extras| Dias Asueto| Dias Descanso</span></a></div>
+        <div class="logo"><a href="https://play.google.com/store/apps/details?id=cpl.calculadora.hp.calculadoradeprestacioneslaborales&hl=es_419&gl=US">CPL<span>-Horas Extras</span></a></div>
     </header>
 
     <!-- Nav -->
@@ -27,59 +27,58 @@
     </nav>
 
     <!-- Banner -->
-    <section id="two" class="wrapper style2">
-        <div class="content">
-            <form method="post" action="" enctype="multipart/form-data">
-                <table>
-                    <td class="6u 12u$(xsmall)">
-                        <p>Selecione el area
-                            <select id="AreaL" name="Categoria">
+    <section class="wrapper style2">
+        <div class="content2">
+            <article>
+                <div>
+                    <span>Selecione el area</span>
+                    <select id="AreaL" name="Categoria">
                                     <option value="#"></option>
                                     <option value="Comercio">Comercio</option>
                                     <option value="Industria">Industria</option>
                                     <option value="Maquila">Maquila</option>
                                     <option value="Agropecuario">Agropecuario</option>
                                 </select>
-                        </p>
-                        <p>Ingrese Salario $
-                            <input type="number" id="Sueldo" name="Sueldo">
-                        </p>
-                        <p>N° Horas extras diurnas $
-                            <input type="number" id="ExtraD" name="HorasDiurnas">
-                        </p>
-                        <p>N° Horas extras nocturnas $
-                            <input type="number" id="ExtraN" name="HorasNocturnas">
-                        </p>
-                        <input type="button" onclick="CalcularExtras()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
-                        <p>
-                            <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
-                                <p align="justify">Si el salario ingresado es inferior al minimo del area selecionada, siempre lo calculara pero advetencia debe tomar en cuenta que es el salario estipulado en la ley</p>
-                                <p align="justify">Las horas diurnas estan comprendidas entre las 6:00AM y las 7:00PM de un mismos dia; y las nocturnas, entre las 7:00PM de un dias y las 6:00Am del dia siguiente</p>
-                            </p>
-                        </p>
-                    </td>
-                    <td class="6u 12u$(xsmall)">
-                        <p>Salario jornada ordinaria(8 Horas):
-                            <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Remuneracion del 50%:
-                            <input id="Rem50" name="Remuneracion" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Total devengado en dia de descanso:
-                            <input id="Total1" name="Total devengado dias descanso" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>_______</p>
+                    </p>
+                </div>
+                <span>Ingrese Salario $</span>
+                <input type="number" id="Sueldo" name="Sueldo">
+                </p>
+                <p>N° Horas extras diurnas $
+                    <input type="number" id="ExtraD" name="HorasDiurnas">
+                </p>
+                <p>N° Horas extras nocturnas $
+                    <input type="number" id="ExtraN" name="HorasNocturnas">
+                </p>
+                <input type="button" onclick="CalcularExtras()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
+                <p>
+                    <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
+                        <p align="justify">Si el salario ingresado es inferior al minimo del area selecionada, siempre lo calculara pero advetencia debe tomar en cuenta que es el salario estipulado en la ley</p>
+                        <p align="justify">Las horas diurnas estan comprendidas entre las 6:00AM y las 7:00PM de un mismos dia; y las nocturnas, entre las 7:00PM de un dias y las 6:00Am del dia siguiente</p>
+                    </p>
+                </p>
+                </td>
+            </article>
+            <article>
+                <p>Salario jornada ordinaria(8 Horas):
+                    <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Remuneracion del 50%:
+                    <input id="Rem50" name="Remuneracion" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Total devengado en dia de descanso:
+                    <input id="Total1" name="Total devengado dias descanso" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>_______</p>
 
-                        <p>Horas extras diurnas $:
-                            <input id="Diurna" name="Total devengado diuarna" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Horas extras nocturnas $:
-                            <input id="Nocturna" name="Total devengado nocturnas" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>Total jornada ordinaria mas horas extras $:
-                            <input id="Total2" name="Total devengando D-N" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                        <p>_______</p>
+                <p>Horas extras diurnas $:
+                    <input id="Diurna" name="Total devengado diuarna" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Horas extras nocturnas $:
+                    <input id="Nocturna" name="Total devengado nocturnas" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Total jornada ordinaria mas horas extras $:
+                    <input id="Total2" name="Total devengando D-N" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>_______</p>
 
-                        <p>Total devengado dia de asueto (Remuración del 100%):
-                            <input id="Total3" name="Dia de Asueto" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                    </td>
-                </table>
-            </form>
+                <p>Total devengado dia de asueto (Remuración del 100%):
+                    <input id="Total3" name="Dia de Asueto" readonly="readonly" type="text" placeholder="$0.00" /></p>
+            </article>
         </div>
     </section>
 
