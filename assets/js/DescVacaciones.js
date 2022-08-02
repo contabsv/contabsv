@@ -54,7 +54,7 @@ function CalcularVac() {
             }
             break;
         default:
-            window.alert("Seleccione area de sector laboral");
+            window.alert("Seleccione sector laboral");
             document.getElementById('SalarioB').value = '';
             document.getElementById('Ans').value = '';
             document.getElementById('Dias').value = '';

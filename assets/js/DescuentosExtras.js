@@ -57,7 +57,7 @@ function CalcularExtras() {
             }
             break;
         default:
-            window.alert("Seleccione area de sector laboral");
+            window.alert("Seleccione sector laboral");
             document.getElementById('SalarioB').value = '';
             document.getElementById('Rem50').value = '';
             document.getElementById('Total1').value = '';
