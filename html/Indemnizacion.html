@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Calculadora de Prestaciones Laborales</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511907583726495" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="">
+        <a href="#menu">Realizar calculo</a>
+        <div class="logo"><a href="../index.html">CPL<span>-Indemnizacion</span></a></div>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="ExtrasSalario.html">Extras al Salario</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="wrapper style2">
+        <div class="content2">
+            <article>
+                <div>
+                    <p></p>
+                    <span>Selecione en caso de consulta SI:</span>
+                    <select id="TipoCoti" name="TipoConsulta">
+                                    <option value="#"></option>
+                                    <option value="RenunciaVoluntaria">SI. es renuncia voluntaria</option>
+                                    <option value="Despido">SI. Finaliza contrado por despido</option>
+                                </select>
+                    </p>
+                </div>
+                <div>
+                    <p></p>
+                    <span>Selecione el areas</span>
+                    <select id="AreaT" name="Categoria">
+                                    <option value="#"></option>
+                                    <option value="Comercio">Comercio</option>
+                                    <option value="Industria">Industria</option>
+                                    <option value="Maquila">Maquila</option>
+                                    <option value="Agropecuario">Agropecuario</option>
+                                </select>
+                    </p>
+                </div>
+                <p>Ingrese Salario $
+                    <input type="number" id="Sueldo" name="Sueldo"> Mensual sin descuentos.
+                </p>
+                <p>Fecha de ingreso
+                    <input type="date" id="FechaI" name="Fecha de ingreso"> A la empresa.
+                </p>
+                <p>Fecha de calculo
+                    <input type="date" id="FechaCal" name="Fecha de Calculo">.
+                </p>
+                <input type="button" onclick="CalcularVac()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
+                <p>
+                    <p align="justify"> Nota: El salario a ingresar es el mensual sin descuentos, tener en cuenta que el calculo solo contempla el salario estipulado por unidad de tiempo
+                    </p>
+                </p>
+            </article>
+            <article>
+                <p>Salario Bruto:
+                    <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" />
+                </p>
+                <p>Años :
+                    <input id="Ans" name="Años laborados" readonly="readonly" type="number" /> </p>
+                <p> Dias:
+                    <input id="Dias" name="Dias laborados" readonly="readonly" type="number" /></p>
+                <p>Salario de quince dias:
+                    <input id="Quicenal" name="SalarioQuincenal" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Indemnización completa:
+                    <input id="IndeC" name="Indemnizacion Completas" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Indemnización proporcionales :
+                    <input id="ProC" name="Indemnizacion Proporcionales" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Total en concepto de indemnizacion:
+                    <input id="TotalC" name="Total Indemnizacion" readonly="readonly" type="text" placeholder="$0.00" /></p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div>
+            <div class="container">
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/RobottoApps" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://instagram.com/robottoinc?igshid=YmMyMTA2M2Y=" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                    <p class="copyright">Correo de contacto: contabtodossv@gmail.com</p>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2022 Derechos reservados a contabvs.com
+                <p>Sitio web desarrollado por : Robotto Inc</p>
+            </div>
+        </div>
+        <div>
+            <a href="Politicas-de-Privacidad.html">º Politicas de privacidad</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/indemnizacion.js"></script>
+
+</body>
+
+</html>
