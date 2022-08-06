@@ -14,7 +14,7 @@
     <!-- Header -->
     <header id="header" class="">
         <a href="#menu">Realizar calculo</a>
-        <div class="logo"><a href="../index.html">CPL<span>-Indemnizacion</span></a></div>
+        <div class="logo"><a href="../index.html">CPL<span>-Vaciones</span></a></div>
     </header>
 
     <!-- Nav -->
@@ -24,24 +24,14 @@
             <li><a href="Descuentos.html">Descuentos</a></li>
             <li><a href="ExtrasSalario.html">Extras al Salario</a></li>
             <li><a href="Vacaciones.html">Vacaciones</a></li>
-            <li><a href="Aguinaldo.html">Aguinaldo</a></li>
+            <li><a href="Indemnizacion.html">Indemnizacion</a></li>
         </ul>
     </nav>
 
-    <!-- Banner -->
+    <!--  formulario -->
     <section class="wrapper style2">
         <div class="content2">
             <article>
-                <div>
-                    <p></p>
-                    <span>Selecione en caso de consulta SI:</span>
-                    <select id="TipoCoti" name="TipoConsulta">
-                                    <option value="#"></option>
-                                    <option value="RenunciaVoluntaria">SI. es renuncia voluntaria</option>
-                                    <option value="Despido">SI. Finaliza contrado por despido</option>
-                                </select>
-                    </p>
-                </div>
                 <div>
                     <p></p>
                     <span>Selecione el areas</span>
@@ -77,18 +67,14 @@
                     <input id="Ans" name="Años laborados" readonly="readonly" type="number" /> </p>
                 <p> Dias:
                     <input id="Dias" name="Dias laborados" readonly="readonly" type="number" /></p>
-                <p>Salario de quince dias:
-                    <input id="Quicenal" name="SalarioQuincenal" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>Indemnización completa:
-                    <input id="IndeC" name="Indemnizacion Completas" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>Indemnización proporcionales :
-                    <input id="ProC" name="Indemnizacion Proporcionales" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>Total en concepto de indemnizacion:
-                    <input id="TotalC" name="Total Indemnizacion" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Aguinaldo completas:
+                    <input id="comAgui" name="AguinaldoCompletas" readonly="readonly" type="text" placeholder="$0.00" /></p>
+                <p>Aguinal proporcionales: 
+                    <p align="justify"> Se contempla el tiempo laborado entre el 12 de diciembre del año anterior al 11 de diciembre de año actual a pagar el aguinaldo</p>
+                    <input id="proAgui" name="VacaionesProporcionales" readonly="readonly" type="text" placeholder="$0.00" /></p>
             </article>
         </div>
-    </section>
-
+</section>
     <!-- Footer -->
     <footer id="footer">
         <div>
@@ -115,7 +101,7 @@
     <script src="../assets/js/skel.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/indemnizacion.js"></script>
+    <script src="../assets/js/aguinaldo.js"></script>
 
 </body>
 

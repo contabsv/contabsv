@@ -2792,6 +2792,32 @@
     .post-body .post-link:hover {
         background: #752a75;
     }
+
+    img {
+        width: 40%;
+        height: 40%;
+        padding: 10px;
+        float: left;
+    }
+
+    .img-2 {
+        width: 40%;
+        height: 40%;
+        padding: 10px;
+        float: right;
+    }
+    @media (max-width: 600px) {
+        img {
+            padding: 2rem 1 2rem 0;
+        }
+    }
+    @media (max-width: 600px) {
+        .img-2 {
+            padding: 2rem 1 2rem 0;
+        }
+    }
+    
+    
     /*Calculos*/
     
     .content2 {
@@ -2807,8 +2833,8 @@
     
     .infort {
         max-width: 1000px;
-        padding: 30px;
-        margin: 30px;
+        padding: 35px;
+        margin: auto;
     }
     
     .infort h2 {
@@ -2850,7 +2876,7 @@
     
     @media (max-width: 600px) {
         .infort {
-            padding: 2rem 0 1rem 0;
+            padding: 2rem 1 2rem 0;
         }
     }
     

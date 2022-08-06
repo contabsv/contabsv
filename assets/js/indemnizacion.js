@@ -39,6 +39,28 @@ function CalcularVac() {
         }
         break;
       case "RenunciaVoluntaria":
+        switch (Area) {
+          case "Comercio":
+            limite = 720.00;
+            salario = salario /2;
+            console.log(limite, salario);
+            break;
+          case "Industria":
+            limite = 720.00;
+            salario = salario /2;
+            console.log(limite);
+            break;
+          case "Maquila":
+            limite = 708.48;
+            salario = salario /2;
+            console.log(limite);
+            break;
+          case "Agropecuario":
+            limite = 537.64;
+            salario = salario /2;
+            console.log(limite);
+            break;
+        }
         break;
       default:
         alert("Selecione monivo por finalizacion de contrato");
@@ -46,11 +68,11 @@ function CalcularVac() {
     }
 
     let porcentajeCal = salario <= limite ? salario : limite;
-    let CalAns = Ans > 0 ? porcentajeCal * Ans : 0.0;
-    let CalPro = Dias > 0 ? (porcentajeCal / 365) * Dias : 0.0;
-    document.getElementById("IndeC").value = "$ " + CalAns.toFixed(2);
-    document.getElementById("ProC").value = "$ " + CalPro.toFixed(2);
-    document.getElementById("TotalC").value ="$ " + (CalAns + CalPro).toFixed(2);
+    let calAns = Ans > 0 ? porcentajeCal * Ans : 0.0;
+    let calPro = Dias > 0 ? (porcentajeCal / 365) * Dias : 0.0;
+    document.getElementById("IndeC").value = "$ " + calAns.toFixed(2);
+    document.getElementById("ProC").value = "$ " + calPro.toFixed(2);
+    document.getElementById("TotalC").value ="$ " + (calAns + calPro).toFixed(2);
   } else if (Fechafin < FechaIni) {
     alert("La fecha final  debe ser mayor a la fecha inicial");
   } else if (Fechafin != null || FechaIni != null) {

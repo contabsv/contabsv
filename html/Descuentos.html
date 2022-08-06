@@ -1,93 +1,228 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Calculadora de Prestaciones Laborales</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511907583726495" crossorigin="anonymous"></script>
-</head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6511907583726495"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header id="header" class="">
-        <a href="#menu">Realizar calculo</a>
-        <div class="logo"><a href="../index.html">CPL<span>-Descuento</span></a></div>
+      <a href="#menu">Realizar calculo</a>
+      <div class="logo">
+        <a href="../index.html">CPL<span>-Descuento</span></a>
+      </div>
     </header>
 
     <!-- Nav -->
     <nav id="menu">
-        <ul class="links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="ExtrasSalario.html">Extras al Salario</a></li>
-            <li><a href="Vacaciones.html">Vacaciones</a></li>
-        </ul>
+      <ul class="links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="ExtrasSalario.html">Extras al Salario</a></li>
+        <li><a href="Vacaciones.html">Vacaciones</a></li>
+        <li><a href="Indemnizacion.html">Indemnizacion</a></li>
+        <li><a href="Aguinaldo.html">Aguinaldo</a></li>
+      </ul>
     </nav>
 
-    <!-- Banner -->
+    <!-- Formulario -->
     <section class="wrapper style2">
-        <div class="content2">
-            <article>
-                <div>
-                    <p></p>
-                    <span>Selecione el area</span>
-                    <p><select id="AreaL" name="Categoria">
-                                    <option value="#"></option>
-                                    <option value="Comercio">Comercio</option>
-                                    <option value="Industria">Industria</option>
-                                    <option value="Maquila">Maquila</option>
-                                    <option value="Agropecuario">Agropecuario</option>
-                                </select>
-                    </p>
-                </div>
-                <span>Ingrese Salario $</span>
-                <p><input type="number" id="Sueldo" name="Sueldo"></p>
-                <p><select name="tipo" id="tipo">
-                             <option value="Quincenal">Quincenal</option>
-                             <option value="Mensual">Mensual</option>
-                         </select>
-                </p>
-                <p><input type="button" onclick="Calcular()" value="Calcular" class="btn1"> <input type="button" onclick="Limpiar()" value="Nuevo Calculo" class="btn1">
-                </p>
-                <div>
-                    <p align="justify">Nota: El salario a ingresar es el mensuan sin ningun descuento, tener encuenta que la aplicacion solo contempla el salario estipulado por unidad de tiempo</p>
-                </div>
-            </article>
-            <article>
-                <p>Salario Bruto:
-                    <input id="SalarioB" name="SalarioB" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>AFP Laboral:
-                    <input id="afp" name="afp" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>ISSS Laboral:
-                    <input id="Isss" name="Isss" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>Renta:
-                    <input id="Renta" name="Renta" readonly="readonly" type="text" placeholder="$0.00" /></p>
-                <p>Salario Neto:
-                    <input id="SalarioN" name="SalarioN" readonly="readonly" type="text" placeholder="$0.00" /></p>
-            </article>
-        </div>
+      <div class="content2">
+        <article>
+          <div>
+            <p></p>
+            <span>Selecione el area</span>
+            <p>
+              <select id="AreaL" name="Categoria">
+                <option value="#"></option>
+                <option value="Comercio">Comercio</option>
+                <option value="Industria">Industria</option>
+                <option value="Maquila">Maquila</option>
+                <option value="Agropecuario">Agropecuario</option>
+              </select>
+            </p>
+          </div>
+          <span>Ingrese Salario $</span>
+          <p><input type="number" id="Sueldo" name="Sueldo" /></p>
+          <p>
+            <select name="tipo" id="tipo">
+              <option value="Quincenal">Quincenal</option>
+              <option value="Mensual">Mensual</option>
+            </select>
+          </p>
+          <p>
+            <input
+              type="button"
+              onclick="Calcular()"
+              value="Calcular"
+              class="btn1"
+            />
+            <input
+              type="button"
+              onclick="Limpiar()"
+              value="Nuevo Calculo"
+              class="btn1"
+            />
+          </p>
+          <div>
+            <p align="justify">
+              Nota: El salario a ingresar es el mensuan sin ningun descuento,
+              tener encuenta que la aplicacion solo contempla el salario
+              estipulado por unidad de tiempo
+            </p>
+          </div>
+        </article>
+        <article>
+          <p>
+            Salario Bruto:
+            <input
+              id="SalarioB"
+              name="SalarioB"
+              readonly="readonly"
+              type="text"
+              placeholder="$0.00"
+            />
+          </p>
+          <p>
+            AFP Laboral:
+            <input
+              id="afp"
+              name="afp"
+              readonly="readonly"
+              type="text"
+              placeholder="$0.00"
+            />
+          </p>
+          <p>
+            ISSS Laboral:
+            <input
+              id="Isss"
+              name="Isss"
+              readonly="readonly"
+              type="text"
+              placeholder="$0.00"
+            />
+          </p>
+          <p>
+            Renta:
+            <input
+              id="Renta"
+              name="Renta"
+              readonly="readonly"
+              type="text"
+              placeholder="$0.00"
+            />
+          </p>
+          <p>
+            Salario Neto:
+            <input
+              id="SalarioN"
+              name="SalarioN"
+              readonly="readonly"
+              type="text"
+              placeholder="$0.00"
+            />
+          </p>
+        </article>
+      </div>
     </section>
 
+    <section class="infort">
+        <div>
+            <h3 style="color:#37273b">CALCULA TUS DESCUENTOS : ISSS, AFP, RENTA</h3>
+            <div class="text">
+                <img src="../assets/img/AFP.png" alt="">
+                <p>AFP</p>
+                <p>
+                    Una AFP o Administradora de Fondos de pensiones es una entidad privada que se encarga 
+                    de la administración del fondo de retiro, es decir, la prestación por vejez, así como 
+                    de otorgar prestaciones por invalidez y sobrevivencia a la familia
+                    de los trabajadores afiliados. La tasa actual para los afiliados sobre su salario es 
+                    del 7.25%.
+                 </p>
+                  El salario máximo cotizable para el año 2022 será de: US $ 7,045.06, establecido mediante
+                  Decretos Legislativos Nos. 255 y 256, publicados en el Diario Oficial N° 246, Tomo N° 433.
+                 <p>
+
+                 </p>
+                    <a href="../assets/pdf/Ley del Sistema de Ahorro para Pensiones.pdf" target="_blank">Fuente: Ley del  Sistema de Ahorro para Pensiones.</a>
+            </div>
+            <div class="text"><p></p>
+                <img src="../assets/img/ISSS.jpg" alt="" class="img-2 ">
+                <p>ISSS</p>
+                <p>El ISSS es el Instituto Salvadoreño del Seguro Social, la entidad encargada de brindar 
+                    servicios de salud al sector empleados, así como de dar cobertura a las incapacidades 
+                    médicas por enfermedad y licencias por maternidad.</p>
+                <p>EL Aporte de ISSS es obligatorio siendo el 3% sobre tu sueldo devengado. El salario máximo cotizable 
+                    para el presente año es de $ 1000.00</p>
+                    <a href="https://www.isss.gob.sv/" target="_blank">Fuente: Instituto Salvadoreño del Seguro Social</a>
+            </div>
+            <div class="text"><p></p>
+                <img src="../assets/img/Renta.JPG" alt="">
+                <p>RENTA</p>
+                <p>
+                    El impuesto sobre la renta, también conocido como ISR es un descuento directo que se aplica sobre las 
+                    ganancias obtenidas, tanto por las personas naturales como por empresas. En el caso de los trabajadores, 
+                    este descuento se aplica para salarios superiores a los USD $472.00 mensuales. Estas 
+                    retenciones se hace de acuerdo con tramos de salarios que el Ministerio de Economía 
+                    actualiza año con año.
+                 </p>
+                 Si la suma de las retenciones no guarda correspondencia con el impuesto que se tendría que 
+                 pagar, de acuerdo con el Art. 37 de la Ley de Impuesto sobre la Renta, el contribuyente 
+                 presentará declaración de renta y liquidará el impuesto.
+                 Esto, de acuerdo con lo establecido en los Arts. 37 y 48 de la ley mencionada. O podrá 
+                 solicitar la devolución de renta correspondiente. En todo caso, quienes obtengan rentas 
+                 mayores a $60,000 están obligados a presentar la declaración
+                 del Impuesto sobre la Renta, de acuerdo con el Art. 1 del Decreto Ejecutivo 95 de la ley 
+                 de El Salvador. Como ves la declaración de impuestos a las personas naturales depende de tus 
+                 ingresos y es obligación que tributes lo que corresponde.
+                 Recuerda siempre hacer la declaración de impuesto sobre la renta con tiempo.
+                 <p>
+
+                 </p>
+                    <a href="../assets/pdf/Nueva tabla Renta.pdf" target="_blank">Fuente: Consulta tabla de retenciones</a>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer id="footer">
-        <div>
-            <div class="container">
-                <ul class="icons">
-                    <li><a href="https://www.facebook.com/RobottoApps" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://instagram.com/robottoinc?igshid=YmMyMTA2M2Y=" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                    <p class="copyright">Correo de contacto: contabtodossv@gmail.com</p>
-                </ul>
-            </div>
-            <div class="copyright">
-                &copy; 2022 Derechos reservados a contabvs.com
-                <p>Sitio web desarrollado por : Robotto Inc</p>
-            </div>
+      <div>
+        <div class="container">
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.facebook.com/RobottoApps"
+                class="icon fa-facebook"
+                target="_blank"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/robottoinc?igshid=YmMyMTA2M2Y="
+                class="icon fa-instagram"
+                target="_blank"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <p class="copyright">Correo de contacto: contabtodossv@gmail.com</p>
+          </ul>
         </div>
-        <div>
-            <a href="Politicas-de-Privacidad.html">º Politicas de privacidad</a>
+        <div class="copyright">
+          &copy; 2022 Derechos reservados a contabvs.com
+          <p>Sitio web desarrollado por : Robotto Inc</p>
         </div>
+      </div>
+      <div>
+        <a href="Politicas-de-Privacidad.html">º Politicas de privacidad</a>
+      </div>
     </footer>
 
     <!-- Scripts -->
@@ -97,7 +232,5 @@
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/Descuentos.js"></script>
-
-</body>
-
+  </body>
 </html>
