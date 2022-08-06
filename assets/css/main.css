@@ -2793,7 +2793,7 @@
         background: #752a75;
     }
 
-    img {
+    .img-1 {
         width: 40%;
         height: 40%;
         padding: 10px;
@@ -2808,15 +2808,20 @@
     }
     @media (max-width: 600px) {
         img {
-            padding: 2rem 1 2rem 0;
+            padding: 2rem 0 1rem 0;
         }
     }
     @media (max-width: 600px) {
         .img-2 {
-            padding: 2rem 1 2rem 0;
+            padding: 2rem 0 1rem 0;
         }
     }
     
+    .wave {
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+    }
     
     /*Calculos*/
     
@@ -2828,6 +2833,7 @@
         margin: auto;
         box-shadow: 0 1px 6px 1px rgb(0, 0, .1);
         padding: 30px;
+        margin-bottom: 120px;
     }
     /*Seccion de informacion*/
     
